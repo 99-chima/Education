@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import CoursesPage from "./CourseDescription";
+import About from "./About";
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
               <>
               <NavBar />
               <Home />
+              <About />
               </>
             }          
 />
