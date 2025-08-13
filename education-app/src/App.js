@@ -1,4 +1,5 @@
 import { CardProvider } from "./CardContext";
+import NavBar from "./NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import CoursesPage from "./CourseDescription";
@@ -11,8 +12,13 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Home />}
-          />
+            element={
+              <>
+              <NavBar />
+              <Home />
+              </>
+            }          
+/>
           <Route
             path="/course/:id"
             element={<CoursesPage />}
