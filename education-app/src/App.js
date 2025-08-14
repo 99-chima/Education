@@ -7,6 +7,7 @@ import About from "./About";
 import Testimonial from "./testimonial";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Login from "./Login";
 import './App.css';
 
 function App() {
@@ -30,6 +31,16 @@ function App() {
           <Route
             path="/course/:id"
             element={<CoursesPage />}
+          />
+               <Route
+            path="/login"
+            element={
+              <>
+                <NavBar />
+                <Login />
+                <Footer />
+              </>
+            }
           />
         </Routes>
       </Router>
