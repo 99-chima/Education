@@ -7,6 +7,7 @@ import About from "./About";
 import Testimonial from "./testimonial";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import Checkout from "./Checkout";
 import Login from "./Login";
 import './App.css';
 
@@ -32,6 +33,14 @@ function App() {
             path="/course/:id"
             element={<CoursesPage />}
           />
+                  <Route path="/Checkout" element={
+  <>
+  <NavBar />
+  <Checkout />
+  <Footer />
+  </>
+}
+/>
                <Route
             path="/login"
             element={
