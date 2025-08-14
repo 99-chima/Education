@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import CoursesPage from "./CourseDescription";
 import About from "./About";
+import Testimonial from "./testimonial";
+import Contact from "./Contact";
+import Footer from "./Footer";
 import './App.css';
 
 function App() {
@@ -18,6 +21,9 @@ function App() {
               <NavBar />
               <Home />
               <About />
+              <Testimonial />
+                <Contact />
+                <Footer />
               </>
             }          
 />
